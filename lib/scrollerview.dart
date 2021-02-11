@@ -8,7 +8,7 @@ class ScrollerView extends StatefulWidget {
   final ScrollController horizontalcontroller;
   final ScrollController verticalcontroller;
 
-  ScrollerView({Key key, this.child, final ScrollController Verticalcontroller, final ScrollController Horizontalcontroller})
+  ScrollerView({Key key, @required this.child, final ScrollController Verticalcontroller, final ScrollController Horizontalcontroller})
       : verticalcontroller = Verticalcontroller ?? ScrollController(),
         horizontalcontroller = Horizontalcontroller ?? ScrollController(),
         super(key: key);
